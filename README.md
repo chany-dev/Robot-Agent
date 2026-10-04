@@ -60,7 +60,7 @@ Per-case results of the latest run: `eval_results.json`.
 ```bash
 pip install -r requirements.txt        # PyBullet may need: conda install -c conda-forge pybullet
 copy .env.example .env                 # then add your Groq API key (Mac/Linux: cp)
-python agent_v2.py                     # interactive agent
+python agentv2.py                     # interactive agent
 python eval.py                         # headless evaluation
 ```
 Interactive commands: a task in plain English, `!drop` (inject a failure), `!reset`,
@@ -68,7 +68,7 @@ Interactive commands: a task in plain English, `!drop` (inject a failure), `!res
 
 ## Files
 - `robot_sim.py`: PyBullet arm, cubes, zones and robot tools
-- `agent_v2.py`: the LangGraph agent
+- `agentv2.py`: the LangGraph agent
 - `agent.py`: earlier one-shot plan-and-execute baseline
 - `eval.py`: automated evaluation
 
