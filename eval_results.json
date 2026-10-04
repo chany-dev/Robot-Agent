@@ -1,0 +1,189 @@
+[
+  {
+    "n": 1,
+    "name": "single move",
+    "command": "put the red cube in the blue zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 4,
+    "failure_injected": false,
+    "seconds": 3.9,
+    "final_state": {
+      "red_cube": "blue_zone",
+      "green_cube": null,
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 2,
+    "name": "single move 2",
+    "command": "move the green cube to the gray zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 4,
+    "failure_injected": false,
+    "seconds": 3.4,
+    "final_state": {
+      "red_cube": null,
+      "green_cube": "gray_zone",
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 3,
+    "name": "single move 3",
+    "command": "put the yellow cube in the blue zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 4,
+    "failure_injected": false,
+    "seconds": 4.1,
+    "final_state": {
+      "red_cube": null,
+      "green_cube": null,
+      "yellow_cube": "blue_zone"
+    },
+    "error": null
+  },
+  {
+    "n": 4,
+    "name": "two cubes",
+    "command": "put the red cube in the blue zone and the green cube in the gray zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 6,
+    "failure_injected": false,
+    "seconds": 8.0,
+    "final_state": {
+      "red_cube": "blue_zone",
+      "green_cube": "gray_zone",
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 5,
+    "name": "typo in zone",
+    "command": "put the red cube in the bluezone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 4,
+    "failure_injected": false,
+    "seconds": 14.4,
+    "final_state": {
+      "red_cube": "blue_zone",
+      "green_cube": null,
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 6,
+    "name": "drop failure 1",
+    "command": "put the red cube in the blue zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 7,
+    "failure_injected": true,
+    "seconds": 32.6,
+    "final_state": {
+      "red_cube": "blue_zone",
+      "green_cube": null,
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 7,
+    "name": "drop failure 2",
+    "command": "move the green cube to the gray zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 7,
+    "failure_injected": true,
+    "seconds": 22.9,
+    "final_state": {
+      "red_cube": null,
+      "green_cube": "gray_zone",
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 8,
+    "name": "drop + lying tool",
+    "command": "put the yellow cube in the blue zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 1,
+    "tool_calls": 8,
+    "failure_injected": true,
+    "seconds": 35.4,
+    "final_state": {
+      "red_cube": null,
+      "green_cube": null,
+      "yellow_cube": "blue_zone"
+    },
+    "error": null
+  },
+  {
+    "n": 9,
+    "name": "refuse: no object",
+    "command": "pick up the banana",
+    "success": true,
+    "verdict": "NO CHECKABLE GOAL",
+    "verifier_retries": 0,
+    "tool_calls": 1,
+    "failure_injected": false,
+    "seconds": 4.7,
+    "final_state": {
+      "red_cube": null,
+      "green_cube": null,
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 10,
+    "name": "refuse: no zone",
+    "command": "put the red cube in the purple zone",
+    "success": true,
+    "verdict": "NO CHECKABLE GOAL",
+    "verifier_retries": 0,
+    "tool_calls": 1,
+    "failure_injected": false,
+    "seconds": 8.9,
+    "final_state": {
+      "red_cube": null,
+      "green_cube": null,
+      "yellow_cube": null
+    },
+    "error": null
+  },
+  {
+    "n": 11,
+    "name": "two cubes + drop",
+    "command": "put the red cube in the blue zone and the yellow cube in the gray zone",
+    "success": true,
+    "verdict": "VERIFIED",
+    "verifier_retries": 0,
+    "tool_calls": 10,
+    "failure_injected": true,
+    "seconds": 50.3,
+    "final_state": {
+      "red_cube": "blue_zone",
+      "green_cube": null,
+      "yellow_cube": "gray_zone"
+    },
+    "error": null
+  }
+]
