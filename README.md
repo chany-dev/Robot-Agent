@@ -7,13 +7,7 @@ against the real scene, and recovers from failures. Built with LangGraph, LangCh
 
 https://github.com/user-attachments/assets/0595a9d8-dd8f-4958-9f90-89684bac9f68
 
-
-
-
-
-
-
-
+▶ [Watch the full demo video on YouTube](https://youtu.be/SVxX0Imskn8)
 
 ## What it does
 Type "put the red cube in the blue zone", then a follow-up like "now put the green cube in the gray zone".
