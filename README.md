@@ -3,7 +3,17 @@
 A natural-language agent that controls a simulated Franka Panda arm, verifies its own results
 against the real scene, and recovers from failures. Built with LangGraph, LangChain and Groq.
 
-**Demo:** [add video or GIF link here]
+**Demo:** 
+
+https://github.com/user-attachments/assets/0595a9d8-dd8f-4958-9f90-89684bac9f68
+
+
+
+
+
+
+
+
 
 ## What it does
 Type "put the red cube in the blue zone", then a follow-up like "now put the green cube in the gray zone".
